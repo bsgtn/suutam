@@ -79,9 +79,10 @@ if "%ffmpeg_exists%" == "F" (
 ) else (
     echo Skipping FFmpeg installation as it is already available.
 )
+call ren "roop-unleashed" "video"
 call curl -o "ghepvideo.bat" "https://huutuan.name.vn/ghepvideo.bat"
-call curl -o "ghepvideo\roop\metadata.py" "https://huutuan.name.vn/metadata.py"
-call curl -o "ghepvideo\ui\main.py" "https://huutuan.name.vn/main.py"
+call curl -o "video\roop\metadata.py" "https://huutuan.name.vn/metadata.py"
+call curl -o "video\ui\main.py" "https://huutuan.name.vn/main.py"
 @rem setup installer env
 @rem check if conda environment was actually created
 if not exist "%INSTALL_ENV_DIR%\python.exe" ( echo. && echo ERROR: Conda environment is empty. && goto end )
