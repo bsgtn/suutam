@@ -67,7 +67,7 @@ def start_app():
 if __name__ == "__main__":
     global MY_PATH
     
-    MY_PATH = "ghepvideo"
+    MY_PATH = "roop-unleashed"
 
     
     # Verifies we are in a conda environment
