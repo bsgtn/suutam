@@ -37,8 +37,8 @@ def install_dependencies():
     os.chdir(MY_PATH)
     run_cmd("git checkout cb8465b2833ce3a1e260211de62d86b493778ae8")
     # Installs dependencies from requirements.txt
-    run_cmd('call curl -o "%cd%/roop/metadata.py" "https://huggingface.co/spaces/x4love/roop-unleashed/blob/main/metadata.py"')
-    run_cmd('call curl -o "%cd%/ui/main.py" "https://huggingface.co/spaces/x4love/roop-unleashed/resolve/main/main.py"')  
+    run_cmd('call curl -o "%cd%/roop/metadata.py" "https://huggingface.co/spaces/x4love/roop-unleashed/resolve/main/metadata.py?download=true"')
+    run_cmd('call curl -o "%cd%/ui/main.py" "https://huggingface.co/spaces/x4love/roop-unleashed/resolve/main/main.py?download=true"')  
     run_cmd("python -m pip install -r requirements.txt")
 
 
